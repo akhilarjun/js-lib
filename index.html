@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Lib</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0; padding: 0;
+            }
+            body{
+                min-height: 100vh;
+                min-width: 100vw;
+                background: #333;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .dispflex{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+            nav{
+                background: #444;
+                position: absolute;
+                width: 100%;
+                text-align: right;
+            }
+            nav .link{
+                font-size: 1em;
+                padding: 1em;
+                color: #fff;
+                text-transform: capitalize;
+                display: inline-block;
+                transition: all 300ms;
+                cursor: pointer;
+            }
+            nav .link:hover{
+                color: #333;
+                background: #fff;
+            }
+            .mrgnauto{
+                margin: auto;
+            }
+            .logo{
+                box-shadow: 0px 0px 20px 0px #000;
+            }
+            .logo > div{
+                float: left;
+                border: 5px solid #eee;
+                padding: 0 3vw;
+                font-size: 10vw;
+                font-weight: bold;
+                color: #323330;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+            .logo:after,.logo:before{
+                content: " ";
+                clear: both;
+                display: table;
+            }
+            .dwnloadlink{
+                margin-top: 5px;
+                text-align: center;
+            }
+            .dwnloadlink .button{
+                padding: 2vw 1.5vw;
+                font-size: 2vw;
+                background: #e4e4e4;
+                color: #4f78f0;
+                font-weight: lighter;
+                cursor: pointer;
+                transition: all 400ms;
+            }
+            .button:hover{
+                background: #fff;
+            }
+        </style>
+    </head>
+    <body class="dispflex">
+        <nav>
+            <div class="link">
+                How To
+            </div>
+            <div class="link">
+                Available Plugins
+            </div>
+            <div class="link">
+                Download
+            </div>
+        </nav>
+        <div class="mrgnauto">
+            <div class="logo">
+                <div style="padding-right:10px;background:#f0db4f">JS</div>
+                <div style="padding-left:10px;background:#eee;">LIB</div>
+            </div>
+            <div class="dwnloadlink">
+                <div class="button">Download V1.0</div>
+            </div>
+        </div>
+        <script src="js/js-lib.js"></script>
+        <script src="js/test.js"></script>
+    </body>
+</html>
